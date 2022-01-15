@@ -92,15 +92,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contacts {
-  background: url("https://images.wallpapersden.com/image/download/minecraft_a2VlbWeUmZqaraWkpJRnamtlrWZsZWU.jpg") center no-repeat;
-  background-size: cover;
   min-height: 100vh;
   width:100%;
+  background: url("https://images.wallpapersden.com/image/download/minecraft_a2VlbWeUmZqaraWkpJRnamtlrWZsZWU.jpg");
+  background-size: cover;
 }
 
 .information_contacts {
     color: #fff;
-    padding-top: 250px;
+    padding-top: 300px;
     text-align: center;
 }
 
