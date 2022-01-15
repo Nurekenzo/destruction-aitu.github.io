@@ -1,1 +1,1 @@
-# destruction-aitu.github.io
+# https://nurekenzo.github.io/destruction-aitu.github.io
