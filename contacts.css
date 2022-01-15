@@ -94,13 +94,28 @@ h1, h2, h3, h4, h5, h6 {
 .contacts {
   min-height: 100vh;
   width:100%;
-  background: url("https://images.wallpapersden.com/image/download/minecraft_a2VlbWeUmZqaraWkpJRnamtlrWZsZWU.jpg");
+  background: url("https://i.imgur.com/FOXD2lO.jpg");
   background-size: cover;
 }
 
+.wrap {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.panel {
+    width: 900px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
 .information_contacts {
-    color: #fff;
-    padding-top: 300px;
+    color: #000;
+    padding-top: 250px;
     text-align: center;
 }
 
