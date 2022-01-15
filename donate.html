@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <title>Destruction</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+    <body>
+       <header class="header">
+         <div class = "container">
+           <div class = "header__inner">
+            <div class="header__logo">
+              <a href = index.html> <img src = "destruction.png" width = 190%></a>
+            </div>
+              <nav class = "nav">
+                <a class="nav__link" href=index.html>Home</a>
+                <a class="nav__link" href=donate.html>Donate</a>
+                <a class="nav__link" href = register.html>Register</a>
+                <a class="nav__link" href=about.html>About us</a>
+                <a class="nav__link" href=contacts.html>Contacts</a>
+              </nav>
+            </div>
+          </div>
+        </header>
+<div class = "donate_page">
+<div class="wrap"><div class="panel">
+<div class="panel-heading"><h2>Система доната</h2></div>
+<div class="panel-body" id="main_panel">
+	<h4>Текущий статус: Обычный игрок</h4>
+	<h3>Обмен вимеров на коины</h3>
+	<p style="text-align:justify">Ни один проект не может существовать без какой-либо поддержки со стороны пользователей, так как нужно платить за аренду оборудования, за поддержание проекта, рекламу, программистам за написание мини-игр. Мы будем очень признательны Вам за пожертвования в любом размере и конечно же мы не останемся в долгу.</p>
+	<form style="padding: 15px;" class="form-horizontal" method="POST" action="exchange">
+		<input type="hidden" name="csrf_token" value="8cae38f20b6b110695814a7457fa0d4fe76d425aba0f29cb35e3c0f7cbf25dc5">
+		<div class="form-group">
+			<label for="vimers" class="col-sm-3 control-label">Вы отдадите вимеров</label>
+			<div class="col-sm-5">
+				<input type="number" class="form-control" id="vimers" name="vimers" placeholder="Количество отдаваемых вимеров">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="coins" class="col-sm-3 control-label">Вы получите коинов</label>
+			<div class="col-sm-5">
+				<input type="decimal" class="form-control" id="coins" name="coins" placeholder="Количество получаемых коинов">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-3 col-sm-5">
+				<button type="submit" class="btn btn-primary" name="process">Обменять</button>
+			</div>
+		</div>
+	</form>
+	<p style="text-align:justify">Работает система накопления. Все Ваши пожертвования суммируются и Вы можете получить статус, когда количество ваших пожертвований дойдёт до определённой суммы.</p>
+
+	<p>
+		</p><div class="color-cube" style="background-color:#06B300"></div>Сумма Ваших пожертвований <small class="muted">0 вимеров.</small><br>
+		<div class="color-cube" style="background-color:#FFE767"></div>Для VIP <small class="muted">200 вимеров.</small><br>
+		<div class="color-cube" style="background-color:#FFCA20"></div>Для Premium#45 <small class="muted">500 вимеров.</small><br>
+		<div class="color-cube" style="background-color:#F5BA00"></div>Для Premium#60 <small class="muted">1000 вимеров.</small><br>
+		<div class="color-cube" style="background-color:#F59F06"></div>Для Holy <small class="muted">1500 вимеров.</small><br>
+		<div class="color-cube" style="background-color:#f06292"></div>Для Immortal <small class="muted">5000 вимеров.</small><br>
+	<p></p>
+	Полоса доброты показывает сколько вам осталось до определённого статуса. Когда сумма достигнет:
+	<ul>
+		<li>более 200 вимеров, то вы автоматически становитесь <b class="text-success">VIP</b> на 30 дней</li>
+		<li>более 500 вимеров - <b class="text-info">Premium</b> на 45 дней</li>
+		<li>более 1000 вимеров - <b class="text-info">Premium</b> на 60 дней</li>
+		<li>более 1500 вимеров, то Вам присваивается статус <b style="color:#F0871A">Holy</b> навсегда</li>
+		<li>более 5000 вимеров - Вы получаете максимально высокий статус <b style="color:#E800D5">Immortal</b> навсегда</li>
+	</ul>
+
+	<h3>Возможности статусов</h3>
+	<table style="font-size: 110%" class="table table-hover">
+		<thead>
+			<tr>
+				<th></th>
+				<th width="120px"><b style="color:#00BE00">VIP</b></th>
+				<th width="120px"><b style="color:#00DADA">Premium</b></th>
+				<th width="120px"><b style="color:#FFBA2D">Holy</b></th>
+				<th width="120px"><b style="color:#E800D5">Immortal</b></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Количество получаемых коинов</td>
+				<td>x<b>2</b></td>
+				<td>x<b>3</b></td>
+				<td>x<b>4</b></td>
+				<td>x<b>5</b></td>
+			</tr>
+			<tr>
+				<td>Приставка перед ником</td>
+				<td><b style="color:#00BE00">[V]</b></td>
+				<td><b style="color:#00DADA">[P]</b></td>
+				<td><b style="color:#FFBA2D">[H]</b></td>
+				<td>
+					<b id="tdip" style="color:#E800D5" data-original-title="" title="">[свой] <span class="glyphicon glyphicon-question-sign" style="color:#bdbdbd; top:3px" aria-hidden="true"></span></b>
+					<script>$("#tdip").tooltip({"placement": "bottom", html:true, "title": "Вы сами можете изменять свой префикс с помощью команды <code>/prefix &lt;новый префикс&gt;</code>"})</script>
+				</td>
+			</tr>
+			<tr>
+				<td>Шанс выпадения сундуков в играх</td>
+				<td>135%</td>
+				<td>180%</td>
+				<td>230%</td>
+				<td>300%</td>
+			</tr>
+			<tr>
+				<td>Количество друзей</td>
+				<td>30</td>
+				<td>50</td>
+				<td>80</td>
+				<td>150</td>
+			</tr>
+			<tr>
+				<td>Количество игроков в группе</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>Количество ежедневных заданий</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>Бесплатные следы</td>
+				<td>2</td>
+				<td>5</td>
+				<td>8</td>
+				<td><b>Все</b></td>
+			</tr>
+			<tr>
+				<td>Вход на переполненный сервер</td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+			</tr>
+			<tr>
+				<td>Полет в лобби</td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+			</tr>
+			<tr>
+				<td>Просмотр игр</td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+			</tr>
+			<tr>
+				<td>Создание своей гильдии</td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+			</tr>
+			<tr>
+				<td>
+					<span id="tdcc" data-original-title="" title="">Цветной чат <span class="glyphicon glyphicon-question-sign" style="color:#bdbdbd; top:2px" aria-hidden="true"></span></span>
+					<script>$("#tdcc").tooltip({"placement": "right", html:true, "title": "<div style=\"text-align: left\">\
+						<div><span style=\"color:#000000\">&0</span> - черный</div>\
+						<div><span style=\"color:#0000bf\">&1</span> - темно-синий</div>\
+						<div><span style=\"color:#00be00\">&2</span> - зелёный</div>\
+						<div><span style=\"color:#00bebe\">&3</span> - бирюзовый</div>\
+						<div><span style=\"color:#be0000\">&4</span> - бордовый</div>\
+						<div><span style=\"color:#be00be\">&5</span> - фиолетовый</div>\
+						<div><span style=\"color:#D9A334\">&6</span> - оранжевый</div>\
+						<div><span style=\"color:#bebebe\">&7</span> - серый</div>\
+						<div><span style=\"color:#3f3f3f\">&8</span> - темно-серый</div>\
+						<div><span style=\"color:#3f3ffe\">&9</span> - синий</div>\
+						<div><span style=\"color:#3ffe3f\">&a</span> - салатовый</div>\
+						<div><span style=\"color:#3ffefe\">&b</span> - голубой</div>\
+						<div><span style=\"color:#fe3f3f\">&c</span> - красный</div>\
+						<div><span style=\"color:#fe3ffe\">&d</span> - розовый</div>\
+						<div><span style=\"color:#fefe3f\">&e</span> - желтый</div>\
+						<div><span style=\"color:#ffffff\">&f</span> - белый</div>\
+					</div>"})</script>
+				</td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+			</tr>
+			<tr>
+				<td>Оповещение о заходе в лобби</td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+			</tr>
+			<tr>
+				<td>
+					<span id="tdos" data-original-title="" title="">Создание своих серверов <span class="glyphicon glyphicon-question-sign" style="color:#bdbdbd; top:2px" aria-hidden="true"></span></span>
+					<script>$("#tdos").tooltip({"placement": "right", html:true, "title": "С помощью команды <code>/game create</code>"})</script>
+				</td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
+				<td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="panel-footer clearfix">
+<span class="pull-right copyright">© 2012-2022 <a href="https://nurekenzo.github.io/destruction-aitu.github.io" target="_blank">Destruction.kz</a></span>
+</div></div>
+
+</body>
+</html>
