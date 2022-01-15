@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
     <title>Destruction</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="donate.css">
   </head>
 
     <body>
@@ -29,173 +29,12 @@
             </div>
           </div>
         </header>
-<div class = "donate_page">
-<div class="wrap"><div class="panel">
-<div class="panel-heading"><h2>Donation system</h2></div>
-<div class="panel-body" id="main_panel">
-	<h4>Current status: Regular player</h4>
-	<h3>Wimer exchange for coins</h3>
-	<p style="text-align:justify">No project can exist without some kind of support from users, as you need to pay for equipment rental, project maintenance, advertising, programmers for writing mini-games. We will be very grateful for your donations in any amount and of course we will not be indebted.</p>
-	<form style="padding: 15px;" class="form-horizontal" method="POST" action="exchange">
-		<input type="hidden" name="csrf_token" value="8cae38f20b6b110695814a7457fa0d4fe76d425aba0f29cb35e3c0f7cbf25dc5">
-		<div class="form-group">
-			<label for="vimers" class="col-sm-3 control-label">You will give away the Wimers</label>
-			<div class="col-sm-5">
-				<input type="number" class="form-control" id="vimers" name="vimers" placeholder="The number of given wimers">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="coins" class="col-sm-3 control-label">You will receive coins</label>
-			<div class="col-sm-5">
-				<input type="decimal" class="form-control" id="coins" name="coins" placeholder="Number of coins received">
-			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-sm-offset-3 col-sm-5">
-				<button type="submit" class="btn btn-primary" name="process">Exchange</button>
-			</div>
-		</div>
-	</form>
-	<p style="text-align:justify">The accumulation system works. All your donations are summed up and you can get a status when the number of your donations reaches a certain amount.</p>
 
-	<p>
-		</p><div class="color-cube" style="background-color:#06B300"></div>The amount of your donations <small class="muted">0 wimers.</small><br>
-		<div class="color-cube" style="background-color:#FFE767"></div>for VIP <small class="muted">200 wimers.</small><br>
-		<div class="color-cube" style="background-color:#FFCA20"></div>for Premium#45 <small class="muted">500 wimers.</small><br>
-		<div class="color-cube" style="background-color:#F5BA00"></div>for Premium#60 <small class="muted">1000 wimers.</small><br>
-		<div class="color-cube" style="background-color:#F59F06"></div>for Holy <small class="muted">1500 wimers.</small><br>
-		<div class="color-cube" style="background-color:#f06292"></div>for Best <small class="muted">5000 wimers.</small><br>
-	<p></p>
-	<ul>
-		<li>more than 200 wimers, then you automatically become <b class="text-success">VIP</b> for 30 days</li>
-		<li>more than500 wimers - <b class="text-info">Premium</b> for 45 days</li>
-		<li>more that 1000 wimers - <b class="text-info">Premium</b> for 60 days</li>
-		<li>more than 1500 wimers, then you are assigned the status <b style="color:#F0871A">Holy</b> forever</li>
-		<li>more than 5000 wimers, then you are assigned the status <b style="color:#E800D5">Best</b> forever</li>
-	</ul>
+        <div class = "donate_page">
+            <h1 class="donate_system">Donation system</h2>
 
-	<h3>Status features</h3>
-	<table style="font-size: 110%" class="table table-hover">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th width="120px"><b style="color:#00BE00">VIP</b></th>
-                  <th width="120px"><b style="color:#00DADA">Premium</b></th>
-                  <th width="120px"><b style="color:#FFBA2D">Holy</b></th>
-                  <th width="120px"><b style="color:#E800D5">Best</b></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Number of coins received</td>
-                  <td>x<b>2</b></td>
-                  <td>x<b>3</b></td>
-                  <td>x<b>4</b></td>
-                  <td>x<b>5</b></td>
-                </tr>
-                <tr>
-                  <td>Prefix before nickname</td>
-                  <td><b style="color:#00BE00">[V]</b></td>
-                  <td><b style="color:#00DADA">[P]</b></td>
-                  <td><b style="color:#FFBA2D">[H]</b></td>
-                  <td>
-                    <b id="tdip" style="color:#E800D5" data-original-title="" title="">[own] <span class="glyphicon glyphicon-question-sign" style="color:#bdbdbd; top:3px" aria-hidden="true"></span></b>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Chance of chests in games</td>
-                  <td>135%</td>
-                  <td>180%</td>
-                  <td>230%</td>
-                  <td>300%</td>
-                </tr>
-                <tr>
-                  <td>Number of friends</td>
-                  <td>30</td>
-                  <td>50</td>
-                  <td>80</td>
-                  <td>150</td>
-                </tr>
-                <tr>
-                  <td>Number of players in a group</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>Number of daily tasks</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td>Free traces</td>
-                  <td>2</td>
-                  <td>5</td>
-                  <td>8</td>
-                  <td><b>All</b></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                </tr>
-                <tr>
-                  <td>Create your own guild</td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <span id="tdcc" data-original-title="" title="">Color Chat <span class="glyphicon glyphicon-question-sign" style="color:#bdbdbd; top:2px" aria-hidden="true"></span></span>
-                  </td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                </tr>
-                <tr>
-                  <td>Lobby entry alert</td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <span id="tdos" data-original-title="" title="">Creating your own servers <span class="glyphicon glyphicon-question-sign" style="color:#bdbdbd; top:2px" aria-hidden="true"></span></span>
-                  </td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#bdbdbd" aria-hidden="true"></span></td>
-                  <td><span class="glyphicon glyphicon-ok" style="color:#4caf50" aria-hidden="true"></span></td>
-                </tr>
-              </tbody>
-            </table>
-         </div>
-<div class="panel-footer clearfix">
-<span class="pull-right copyright">© 2012-2022 <a href="https://nurekenzo.github.io/destruction-aitu.github.io" target="_blank">Destruction.kz</a></span>
-</div></div>
+
+        </div>
 
 </body>
 </html>
