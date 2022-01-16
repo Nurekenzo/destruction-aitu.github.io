@@ -1,41 +1,23 @@
-body {
-  margin: 0;
-  font-family: 'Righteous', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
 
+
+body {
   line-height: 1.6;
   font-size: 18px;
-  color: #777;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
-
-.container {
-  width: 100%;
-  max-width: 1400px;
   margin: 0 auto;
 }
 
-.intro {
-  width:100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/FOXD2lO.jpg");
-  background-size: cover;
-}
+/*    HEADER  */
+#header {
+  font-family: 'Righteous', cursive;
+  color: #fff;
 
-.intro-title {
-  font-size: 100px;
-  font-weight: 500px;
-  font-family: 'Press Start 2P', cursive;
-  color:#fc89ac;
-  text-align: center;
-  padding-top: 200px;
-}
-
-
-.header {
   position: fixed;
   padding-top: 2px;
   width: 100%;
@@ -53,29 +35,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__logo {
   width: 5%;
-  font-family: 'Press Start 2P', cursive;
   padding-left: 70px;
   padding-top: 10px;
-
 }
 
-.nav  {
-  font-size: 30 px;
+.navbar-brand{
+    text-decoration: none;
+    padding-left: 105px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav{
+  color: #fff;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
-.nav__link {
+.nav-link {
   color: white;
+
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
-  margin: 0 12px;
 
+  margin: 0 12px;
   position: relative;
   transition: color 0.1s linear;
 }
 
-.nav__link:after {
+.nav-link::after {
     content: "";
     display: block;
     width: 100%;
@@ -83,35 +72,122 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     background-color: #e03c31;
 
-    position: absolute;
+    position: static;
     top: 100%;
     left 0;
     z-index: 1;
     transition: opacity 0.1s linear;
 }
 
-.nav__link:hover {
+.nav-link:hover {
   color: #e03c31;
 }
 
-.nav__link:hover:after {
+.nav-link:hover::after {
   opacity: 1;
 }
 
-.sec_page {
-  display: flex;
-  min-height: 100vh;
+/*    INTRODUCTION  */
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.intro {
   width:100%;
-  background-color:#fff;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/FOXD2lO.jpg");
+  background-size: cover;
+}
+
+.intro-text {
+  font-size: 110px;
+  font-weight: 500px;
+  font-family: 'Press Start 2P', cursive;
+  color:#fc89ac;
+  text-align: center;
+
+  padding-top: 250px;
+  margin: 0 auto;
+
+}
+
+/*    FEATURES    */
+.sec_page {
+  width:100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.imgur.com/W0v2dDl.jpg");
+  background-size: cover;
 }
 
 .sec_page_text {
-  font-size: 40px;
-  margin: 0 auto;
-  font-family: monospace, sans-serif;
-  width: 100%;
-  max-width: 880px;
-  color: white;
+  font-size: 20px;
   padding-top: 250px;
+  color: white;
 }
 
+.h4 {
+  color:#fc89ac;
+  padding-top: 25px;
+}
+
+.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(Img/medical-prof.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 45px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
+}
+
+
+.carousel-item {
+    height: 250px;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 30px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    animation: slideUp 1s forwards;
+}
+
+.button {
+    vertical-align: top;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    border-radius: 3px;
+    background-color: #e03c31;
+}
+
+.button:hover {
+  color:black;
+}
+
+.mean, .mean-1 {
+  font-family: 'Righteous', cursive; 
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
