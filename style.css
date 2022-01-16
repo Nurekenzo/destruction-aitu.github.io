@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*    INTRODUCTION  */
-.container {
+.container-intro {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
@@ -186,8 +186,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mean, .mean-1 {
-  font-family: 'Righteous', cursive; 
+  font-family: 'Righteous', cursive;
   color: white;
   margin: 0 auto;
   text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: black;
+}
+.footer {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 18px;
+}
+
+.footer-text {
+  text-align: center;
+  text-decoration: none;
+  color: #e03c31;
 }
