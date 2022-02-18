@@ -11,9 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
     <title>Destruction</title>
     <link rel="stylesheet" href="donate.css">
+    <script src="des.js" charset="utf-8" defer></script>
   </head>
 
     <body>
+
+
+      <audio id="song">
+        <source src="game-won.mp3" />
+      </audio>
+
        <header class="header">
          <div class = "container">
            <div class = "header__inner">
@@ -32,7 +39,11 @@
         </header>
 
         <div class = "donate_page">
-            <h1 class="donate_system">Donation system<br>Soon...</h2>
+          <div class="donate-inner">
+            <h2 class="donate-title">Donation system Soon...</h2>
+          </div>
+
+              <button onmouseover="mOver(this)" onmouseout="mOut(this)" id="one" >Click here</button>
 
         </div>
 
