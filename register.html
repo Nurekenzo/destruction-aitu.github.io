@@ -7,12 +7,16 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
+    <script src="des.js" charset="utf-8" defer></script>
     <title>Registration</title>
 </head>
 
 <body>
+
+  
+
+
   <header class="header">
     <div class = "container">
       <div class = "header__inner">
@@ -30,33 +34,50 @@
      </div>
    </header>
 
+<audio id="sound">
+  <source src="game-won.mp3" />
+</audio>
     <main>
-        <div class="register-form-container">
-            <form action="">
-                <h1 class="form-title">
-                    Registration
-                </h1>
-                <div class="form-fields">
-                    <div class="form-field">
-                        <input type="text" placeholder="Nickname">
-                    </div>
-                    <div class="form-field">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="form-field">
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <div class="form-field">
-                        <input type="password" placeholder="Password">
-                    </div>
-                </div>
-                <div class="form-buttons">
-                    <button class="button">Register</button>
-                    <div class="divider">or</div>
-                    <a href="#" class="button button-google">Google</a>
-                </div>
-            </form>
+      <div class="container-form">
+        <div class="create_acc">
+          <h2>Be in our ranks!</h2>
         </div>
+
+        <form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Username</label>
+			<input type="text" placeholder="hikaya" id="username" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="example@example.com" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Password</label>
+			<input type="password" placeholder="Password" id="password"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Check</label>
+			<input type="password" placeholder="Repeat password" id="password2"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<button>Registration</button>
+	</form>
+      </div>
+
+
+
     </main>
 </body>
 
