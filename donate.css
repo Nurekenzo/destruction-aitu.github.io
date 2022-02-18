@@ -1,14 +1,15 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Righteous', cursive;
 
   line-height: 1.6;
   font-size: 18px;
   color: #777;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
 }
 
   /* container */
@@ -95,14 +96,50 @@ h1, h2, h3, h4, h5, h6 {
 .donate_page {
   background: url("https://cutewallpaper.org/21/minecraft-enderdragon-wallpaper/Minecraft-Enderdragon-Fight-Wallpaper-by-MrPifo-on-DeviantArt.jpg");
   background-repeat: no-repeat;
-  background-position: cover;
+
   background-size: cover;
+
   min-height: 100vh;
   width:100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.donate_system {
-  color: white;
+
+.donate-inner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+
+}
+
+.donate-title {
+  text-transform: uppercase;
+  color:white;
+  font-size: 30px;
   text-align: center;
-  padding: 300px;
+
+}
+
+button {
+  max-width: 100%;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  padding: 14px 10px;
+  background-color: #ff003f;
+}
+
+button.obj2 {
+  max-width: 100%;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  padding: 14px 10px;
+  background-color: #ff003f;
 }
