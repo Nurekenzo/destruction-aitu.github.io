@@ -5,8 +5,11 @@
 
 
 body {
+  margin: 0;
+  font-family: 'Righteous', cursive;
   line-height: 1.6;
   font-size: 18px;
+  color: #777;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,8 +18,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*    HEADER  */
 #header {
-  font-family: 'Righteous', cursive;
-  color: #fff;
 
   position: fixed;
   padding-top: 2px;
