@@ -124,3 +124,51 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration-color: orange;
   color: orange;
 }
+
+@media(max-width: 1230px) {
+    .header{padding: 0 125px 0 125px;}
+    .container{padding: 0 125px 0 125px;}
+    .header__inner{padding: 0 125px 0 125px;}
+    .header__logo{padding: 0 125px 0 125px;}
+    .panel{padding: 0 125px 0 125px;}
+    .nav{max-height: 990px;}
+
+
+}
+
+@media(max-width: 990px) {
+    .header{padding: 0 100px 0 100px;}
+    .container{padding: 0 100px 0 100px;}
+    .header__inner{padding: 0 100px 0 100px;}
+    .header__logo{padding: 0 100px 0 100px;}
+    .panel{padding: 0 90px 0 90px;}
+    .donate_page{height: 55px;}
+
+
+}
+@media(max-width: 770px) {
+    .header{padding: 0 75px 0 75px;}
+    .container{padding: 0 75px 0 75px;}
+    .header__inner{padding: 0 75px 0 75px;}
+    .header__logo{padding: 0 75px 0 75px;}
+    .panel{padding: 0 50px 0 50px;}
+    .panel{width: 75%;}
+    .intro{max-height: 500px;}
+
+
+
+}
+@media (max-width: 575px) {
+    .header__logo{height: 0px;}
+}
+@media (max-width: 500px) {
+    .header{padding: 0 50px 0 50px;}
+    .container{padding: 0 50px 0 50px;}
+    .header__inner{padding: 0 50px 0 50px;}
+    .header__logo{padding: 0 100px 0 100px;}
+    .panel{padding: 0 50px 0 50px;}
+    .panel{width: 20%;}
+    .nav{font-size: 15px;}
+
+    }
+}
