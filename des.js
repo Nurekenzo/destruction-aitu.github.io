@@ -65,17 +65,20 @@ function isEmail(email) {
 }
 
 
-const mySound = document.getElementById("song");
-const correctButton = document.getElementById('one');
+function soundClick() {
+  var audio = new Audio(); // Создаём новый элемент Audio
+  audio.src = 'game-won.mp3'; // Указываем путь к звуку "клика"
+  audio.autoplay = true; // Автоматически запускаем
+}
 
-correctButton.addEventListener("click", function(){ mySound.play(); });
 
 function mOver(obj) {
   obj.innerHTML = "Click"
 	const obj2 = input.parentElement;
+
 	obj2.className = 'button obj2';
 }
 
 function mOut(obj) {
-  obj.innerHTML = "Mouse here"
+  obj.innerHTML = "Buy"
 }
