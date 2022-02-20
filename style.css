@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
 
 
 body {
@@ -210,4 +210,47 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   text-decoration: none;
   color: #e03c31;
+}
+
+@media(max-width: 1230px) {
+    .header{padding: 0 125px 0 125px;}
+    .container{padding: 0 125px 0 125px;}
+    .header__inner{padding: 0 125px 0 125px;}
+    .header__logo{padding: 0 125px 0 125px;}
+    .nav{max-height: 990px;}
+
+
+}
+
+@media(max-width: 990px) {
+    .header{padding: 0 100px 0 100px;}
+    .container{padding: 0 100px 0 100px;}
+    .header__inner{padding: 0 100px 0 100px;}
+    .header__logo{padding: 0 100px 0 100px;}
+    .donate_page{height: 55px;}
+
+
+}
+@media(max-width: 770px) {
+    .header{padding: 0 75px 0 75px;}
+    .container{padding: 0 75px 0 75px;}
+    .header__inner{padding: 0 75px 0 75px;}
+    .header__logo{padding: 0 75px 0 75px;}
+    .intro{max-height: 500px;}
+
+
+
+}
+@media (max-width: 575px) {
+    .header__logo{height: 0px;}
+}
+@media (max-width: 500px) {
+    .header{padding: 0 50px 0 50px;}
+    .container{padding: 0 50px 0 50px;}
+    .header__inner{padding: 0 50px 0 50px;}
+    .header__logo{padding: 0 100px 0 100px;}
+
+    .nav{font-size: 15px;}
+
+    }
 }
