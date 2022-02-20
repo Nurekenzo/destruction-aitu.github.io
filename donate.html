@@ -11,7 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
     <title>Destruction</title>
     <link rel="stylesheet" href="donate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script> 
+          $(document).ready(function(){
+            $("#flip").click(function(){
+              $("#panel").slideToggle("slow");
+            });
+          });
+          </script>
+          <style> 
+          #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+          }
 
+          #panel {
+            padding: 50px;
+            display: none;
+          }
+          </style>
   </head>
 
     <body>
@@ -41,6 +61,9 @@
             <div>
               <audio src="game-won.mp3" autoplay="autoplay"></audio>
               <button onmouseover="mOver(this)" onmouseout="mOut(this)" onclick="soundClick()">Buy</button>
+              
+              <div id="flip" style="color:white"><b>Click to see donation system</div>
+                <div id="panel" style="color:white" >You are bited, wait an update)))
 
             </div>
         </div>
